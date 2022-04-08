@@ -19,7 +19,7 @@ def init_sqlite():
     c.execute('''CREATE TABLE googles (term text)''')
     conn.close()
 
-# Write a ticker to the watchlist
+# Write phrase to db
 def write(term):
     sqlite_connect()
     c = conn.cursor()
